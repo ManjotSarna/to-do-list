@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List | COMP1073 Client-Side JavaScript</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+</head>
+<body>
+    <header>
+        <h1>TASKS TO BE DONE</h1>
+    </header> 
+    <audio id="check" src="media/ding.mp3" autoplay="false"></audio>
+    <audio id="discard" src="media/discard.mp3" autoplay="false"></audio>
+    <form>
+        <input type="text" class="task_input" placeholder="Enter The Task" />
+        <button type="submit" class="task_button">
+            <i class="fa-solid fa-rectangle-list"></i>
+        </button>   
+    </form>
+    
+    <div class="task_container">
+        <ul class="task_list"></ul>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+</html>

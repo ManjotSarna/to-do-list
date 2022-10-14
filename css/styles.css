@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: linear-gradient(1deg, #8BC6EC, #9599E2);
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    min-height: 100vh;
+}
+
+header,form{
+    display: flex;
+    justify-content: center;
+    min-height: 15vh;
+    align-items: center;    
+}
+form input, form button{
+    padding: 6px;
+    border: none;
+    font-size: 25px;
+    background: white;
+    height: 45px;
+}
+form button{
+    color: #9599E2;
+    background: white;
+    cursor: pointer;
+}
+form button:hover{
+    background: #9599E2;
+    color: white;
+}
+
+
+.task_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.task_list{
+    min-width: 45%;
+    list-style: none;
+}
+
+.task{
+    display: flex;
+    margin: 5px auto;
+    justify-content: space-between;
+    background: white;
+    color: #000000;
+    font-size: 18px;
+    padding: 5px;
+    align-items: center;
+    transition: all 0.5s ease;
+    height: 45px;
+}
+
+.task li {
+    flex: 1;
+}
+
+
+.complete_btn, 
+.delete_btn{
+    padding: 8px;
+    background: #ff3700;
+    color: white;
+    border: none;
+    margin-left: 3px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.complete_btn{
+    background: rgb(67, 179, 67);
+}
+
+
+.completedItem{
+    text-decoration: line-through;
+    opacity: 0.4;
+    transform: scale(0.90);
+}
+
+.fall{
+    transform: translateY(60px) scale(0.4) rotateZ(20deg);
+    opacity: 0;
+}
+
+.fa-ban,
+.fa-check{
+    pointer-events: none;
+}
